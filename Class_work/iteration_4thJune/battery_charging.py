@@ -1,6 +1,6 @@
 #program for display batterycharging level 
 charging_level = 20
-electricity_status = True
+electricity_status = True 
 while (charging_level <= 100):
     if(electricity_status):
         print("Battery charging level: ", charging_level, "%")
