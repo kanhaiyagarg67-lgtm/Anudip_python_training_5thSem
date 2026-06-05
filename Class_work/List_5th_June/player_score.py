@@ -9,5 +9,8 @@ for i in range(11):
 print("------player scores------")    
 print("Player Scores:", player_score)    
 #find the maximum score
-maximum_score = max(player_score)
-print("Maximum Score:", maximum_score)
+max = player_score[0]
+for i in range(1, len(player_score)):
+    if player_score[i] > max:
+        max = player_score[i]  
+print("Maximum Score:", max)
