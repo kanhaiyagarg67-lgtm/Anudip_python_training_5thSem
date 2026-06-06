@@ -24,7 +24,7 @@ print("Attendance Dictionary:")
 print(attendance)
 
 # Display only those students who are Present
-print(nRoll numbers of Present students:")
+print(Roll numbers of Present students:")
 
 # Traverse dictionary using roll number as key
 for roll_no in attendance:
