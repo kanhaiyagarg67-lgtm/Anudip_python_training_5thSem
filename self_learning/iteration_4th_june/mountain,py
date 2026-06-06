@@ -1,0 +1,36 @@
+# Accept number from user
+num = int(input("Enter a number: "))
+
+# Empty list to store digits
+digits = []
+
+# Extract digits from number
+while num > 0:
+
+    # Insert each digit at beginning to maintain correct order
+    digits.insert(0, num % 10)
+
+    # Remove last digit
+    num = num // 10
+
+# Start from first index
+i = 0
+
+# Check increasing part
+while i < len(digits) - 1 and digits[i] < digits[i + 1]:
+    i = i + 1
+
+# If no increasing part or only increasing part exists
+if i == 0 or i == len(digits) - 1:
+    print("Not a Mountain Number")
+
+else:
+    # Check decreasing part
+    while i < len(digits) - 1 and digits[i] > digits[i + 1]:
+        i = i + 1
+
+    # If all digits are checked, it is a mountain number
+    if i == len(digits) - 1:
+        print("Mountain Number")
+    else:
+        print("Not a Mountain Number")
