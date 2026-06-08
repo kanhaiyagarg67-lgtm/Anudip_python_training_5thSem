@@ -19,24 +19,8 @@ Tasks
 3. Find the least-selling product.  
 4. Calculate total products sold.  
 5. Create a list of products requiring promotion (sales < 15).  
-6. Count products having sales between 10 and 30.  
-Sample Output 
-Products Sold More Than 20 Times: 
-Mouse 
-Keyboard 
-Headphones 
-Router 
- 
-Best Selling Product: Mouse (45) 
- 
-Least Selling Product: Printer (8) 
- 
-Total Units Sold: 213 
- 
-Products Requiring Promotion: 
-['Monitor', 'Printer', 'Tablet'] 
- 
-Products Having Sales Between 10 and 30: 6'''
+6. Count products having sales between 10 and 30.  '''
+
 
 #sales data for 10 products
 sales = {
@@ -82,3 +66,21 @@ for quantity in sales.values():
     total_sold += quantity
 print("Total Units Sold:", total_sold)
 print("---------------------------------")      
+
+''' Sample Output 
+Products Sold More Than 20 Times: 
+Mouse 
+Keyboard 
+Headphones 
+Router 
+ 
+Best Selling Product: Mouse (45) 
+ 
+Least Selling Product: Printer (8) 
+ 
+Total Units Sold: 213 
+ 
+Products Requiring Promotion: 
+['Monitor', 'Printer', 'Tablet'] 
+ 
+Products Having Sales Between 10 and 30: 6'''
