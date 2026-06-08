@@ -19,24 +19,8 @@ Tasks
 3. Find the lowest scorer.  
 4. Calculate total runs scored.  
 5. Create a list of players scoring below 400.  
-6. Count players scoring between 400 and 600 runs.  
-Sample Output 
-Players Scoring More Than 500 Runs: 
-Virat 
-Rohit 
-Gill 
-Pant 
- 
-Orange Cap Winner: Gill (698) 
- 
-Lowest Scorer: Hardik (278) 
- 
-Total Tournament Runs: 4657 
- 
-Players Scoring Below 400: 
-['Hardik', 'Surya', 'Jadeja'] 
- 
-Players Between 400 and 600 Runs: 5'''
+6. Count players scoring between 400 and 600 runs.  '''
+
 
 runs = {
     "Virat": 645,
@@ -122,3 +106,22 @@ for run in runs.values():
 
 print()
 print("Players Between 400 and 600 Runs:", count)
+
+
+'''Sample Output 
+Players Scoring More Than 500 Runs: 
+Virat 
+Rohit 
+Gill 
+Pant 
+ 
+Orange Cap Winner: Gill (698) 
+ 
+Lowest Scorer: Hardik (278) 
+ 
+Total Tournament Runs: 4657 
+ 
+Players Scoring Below 400: 
+['Hardik', 'Surya', 'Jadeja'] 
+ 
+Players Between 400 and 600 Runs: 5'''
