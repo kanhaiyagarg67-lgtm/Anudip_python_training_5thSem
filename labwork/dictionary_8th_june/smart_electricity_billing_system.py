@@ -22,32 +22,10 @@ Tasks
 o Low Consumption (< 200)  
 o Medium Consumption (200–400)  
 o High Consumption (> 400)  
-6. Count houses eligible for an energy-saving campaign (consumption > 300).  
-Sample Output 
-Houses Consuming More Than 400 Units: 
-House103 
-House106 
-House110 
- 
-Highest Consumption: 
-House110 (600 units) 
- 
-Lowest Consumption: 
-House109 (145 units) 
- 
-Total Units Consumed: 3220 
- 
-Low Consumption: 
-['House102', 'House105', 'House109'] 
- 
-Medium Consumption: 
-['House101', 'House104', 'House107', 'House108'] 
- 
-High Consumption: 
-['House103', 'House106', 'House110'] 
- 
-Eligible for Energy-Saving Campaign: 5'''
+6. Count houses eligible for an energy-saving campaign (consumption > 300).  '''
 
+
+# creating a dictionary contains house number and electricity units consumption
 units = {
     "House101": 320,
     "House102": 180,
@@ -146,3 +124,34 @@ for unit in units.values():
 
 print()
 print("Eligible for Energy-Saving Campaign:", campaign)
+
+
+
+
+'''Sample Output 
+Houses Consuming More Than 400 Units: 
+House103 
+House106 
+House110 
+ 
+Highest Consumption: 
+House110 (600 units) 
+ 
+Lowest Consumption: 
+House109 (145 units) 
+ 
+Total Units Consumed: 3220 
+ 
+Low Consumption: 
+['House102', 'House105', 'House109'] 
+ 
+Medium Consumption: 
+['House101', 'House104', 'House107', 'House108'] 
+ 
+High Consumption: 
+['House103', 'House106', 'House110'] 
+ 
+Eligible for Energy-Saving Campaign: 5'''
+
+
+
