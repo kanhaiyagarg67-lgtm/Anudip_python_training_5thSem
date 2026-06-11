@@ -1,0 +1,20 @@
+present = 0
+absent = 0
+student = 1
+
+while student <= 30:
+    print("Student", student)
+    attendance = input("Attendance: ")
+
+    if attendance == "p":
+        present = present + 1
+        student = student + 1
+    elif attendance =="a":
+        absent = absent + 1
+        student = student + 1
+    else:        
+        print("Invalid input. Please enter 'p' for present or 'a' for absent.")
+        print()
+
+print("No. of Students Present:", present)
+print("No. of Students Absent:", absent)

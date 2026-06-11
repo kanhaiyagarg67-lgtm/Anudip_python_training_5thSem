@@ -1,0 +1,15 @@
+print("------Triangle------")
+side1 = float(input(" enter the first side(in cm):"))
+side2 = float(input(" enter the second side(in cm):"))
+side3 = float(input(" enter the third side(in cm):"))
+print("-----------------------------")
+print("First side:", side1, "cm")
+print("Second side:", side2, "cm")
+print("Third side:", side3, "cm")
+perimeter = side1 + side2 + side3
+s=perimeter /2
+area = (s*(s-side1)*(s-side2)*(s-side3)) ** 0.5
+print("--------AREA---------")
+print("The area of the triangle is:", area,"square cm")
+print("--------PERIMETER---------")
+print("The perimeter of the triangle is:", perimeter,"cm")
